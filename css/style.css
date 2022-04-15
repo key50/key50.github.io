@@ -62,21 +62,21 @@ article {
     grid-gap: 10px;
 }
 
+#SpainMap {
+    object-fit: none;
+    object-position: 50% 50%;
+}
+
 #Loc {
     grid-area: loc;
-    /* grid-row: 1 / span 2; */
 }
 
 #GeoLoc {
     grid-area: coord;
-    /* grid-column: 2;
-    grid-row: 1; */
 }
 
 #GeoMet {
     grid-area: metr;
-    /* grid-column: 2;
-    grid-row: 2; */
 }
 
 #Gov {
