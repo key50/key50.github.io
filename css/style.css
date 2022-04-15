@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
 
-
+/* main element selectors */
 body {
-    font-family: 'Raleway', Verdana, Arial, sans-serif;
-    line-height: 1.5;
-    font-size: 16;
+    font-family: 'Raleway', 'Roboto', Verdana, Arial, sans-serif;
+    line-height: 1.2;
+    font-size: 15px;
 
     display: grid;
     grid-template-areas: 
@@ -22,32 +22,59 @@ main {
     grid-area: main;
     display: grid;
     grid-template-areas: 
-        "intro geo"
-        "gov gov";
-    grid-template-columns: 1fr 1fr;
+        "intro gov gov"
+        "geo gov gov";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 
 footer {
     grid-area: footer;
+    font-size: 12px;
 }
 
-tr:nth-child(odd) {
-    background-color: #d9d9d9;
+footer p {
+    display: inline;
 }
 
-td {
-    text-align: center;
+/* link selectors */
+a:link {
+    color: #D92C30;
 }
 
+a:visited {
+    color: #D775A2;
+}
+
+a:hover {
+    color: #FBC831;
+}
+
+a:active {
+    color: #396782;
+}
+
+
+/* attribute selectors */
 section {
     background-color: #ddd;
+    padding: 10px;
+}
+
+section h2 {
+    margin-top: 0;
 }
 
 article {
     background-color: #eee;
+    padding: 10px;
 }
 
+article h3 {
+    margin-top: 0;
+}
+
+/* id selectors */
 #Geo {
     grid-area: geo;
 }
@@ -55,30 +82,57 @@ article {
 #GeoArts {
     display: grid;
     grid-template-areas: 
-        "loc coord"
-        "loc metr";
-    grid-template-columns: 1fr 1fr;
+        "loc"
+        "coord";
+    grid-template-columns: 1fr;
     padding: 10px;
     grid-gap: 10px;
-}
-
-#SpainMap {
-    object-fit: none;
-    object-position: 50% 50%;
 }
 
 #Loc {
     grid-area: loc;
 }
 
+#SpainMap {
+    float: left;
+    margin: 8px;
+}
+
 #GeoLoc {
     grid-area: coord;
 }
 
-#GeoMet {
-    grid-area: metr;
-}
-
 #Gov {
     grid-area: gov;
+}
+
+#GovArts {
+    display: grid;
+    grid-template-areas: 
+        "cont flag"
+        "cap indp";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+#SpainFlag {
+    object-position: center;
+}
+
+#Cntry {
+    grid-area: cont;
+}
+
+#Flag {
+    grid-area: flag;
+}
+
+#Cptl {
+    grid-area: cap;
+}
+
+#Indp {
+    grid-area: indp;
 }
