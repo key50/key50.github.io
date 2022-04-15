@@ -6,6 +6,7 @@ body {
     line-height: 1.2;
     font-size: 15px;
 
+    background-color: #f6c453;
     display: grid;
     grid-template-areas: 
         "header"
@@ -57,7 +58,7 @@ a:active {
 
 /* attribute selectors */
 section {
-    background-color: #ddd;
+    background-color: #f0a04b;
     padding: 10px;
 }
 
@@ -66,7 +67,7 @@ section h2 {
 }
 
 article {
-    background-color: #eee;
+    background-color: #fefbe9;
     padding: 10px;
 }
 
