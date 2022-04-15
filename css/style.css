@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    font-family: 'Raleway', Verdana, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16;
+
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;  
+    text-align: center;  
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "intro geo"
+        "gov gov";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+tr:nth-child(odd) {
+    background-color: #d9d9d9;
+}
+
+td {
+    text-align: center;
+}
+
+section {
+    background-color: #ddd;
+}
+
+article {
+    background-color: #eee;
+}
+
+#Geo {
+    grid-area: geo;
+}
+
+#GeoArts {
+    display: grid;
+    grid-template-areas: 
+        "loc coord"
+        "loc metr";
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+#Loc {
+    grid-area: loc;
+    /* grid-row: 1 / span 2; */
+}
+
+#GeoLoc {
+    grid-area: coord;
+    /* grid-column: 2;
+    grid-row: 1; */
+}
+
+#GeoMet {
+    grid-area: metr;
+    /* grid-column: 2;
+    grid-row: 2; */
+}
+
+#Gov {
+    grid-area: gov;
+}
