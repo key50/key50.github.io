@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset ="utf-8"/>
+        <meta charset="utf-8"/>
         <title>Anthony's Climbing Adventures</title>
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
 
     <body>
-        <h1>Anthony Santelices</h1>
+        <header>
+            <h1>Anthony Santelices</h1>
+        </header>
 
-            <p>This website will be used as a journal of sorts to keep track of my climbing activites at the <em>Outdoor Advdentures</em> Climbing Wall.</p>
-            <p>There are several sections on this page. One talks about the differences in climbing types. One talks about the difficulties and grades of climbing. The last will be a log of all 
-                the routes, or problems, as they are called in the climbing community, that I complete.</p>
+        <main>
+            <section id="intro">
+                <p>This website will be used as a journal of sorts to keep track of my climbing activites at the <em>Outdoor Advdentures</em> Climbing Wall.</p>
+                <p>There are several sections on this page. One talks about the differences in climbing types. One talks about the difficulties and grades of climbing. The last will be a log of all 
+                    the routes, or problems, as they are called in the climbing community, that I complete.</p>
+                </section>
 
-        <h2>Bouldering versus other types of climbing</h2>
+            <section id="type">
+                <h2>Bouldering versus other types of climbing</h2>
 
-            <p>At the <em>Outdoor Adventures</em> space on campus, there is a bouldering wall available free to students, and to faculty for a small fee.</p>
+                    <p>At the <em>Outdoor Adventures</em> space on campus, there is a bouldering wall available free to students, and to faculty for a small fee.</p>
 
-            <p>
-                Bouldering differes from other kinds of climbing in that there is no harness around your body and there are no ropes to catch you if you fall.
-                Because of this, bouldering is typically done, well, on boulders, big rocks. Bouldering can be done both inside and outside. Outside bouldering tries to mitigate possible harm
-                by having a safety mat under you while you climb. This mat has some foam cushion and is a only a few inches thick as a lot of outdoor boulding spots require a short hike 
-                through the wilderness. You don't want to be luggin around a 30 pound mat of foam to and from your climbing site.
-            </p>
+                    <p>
+                        Bouldering differes from other kinds of climbing in that there is no harness around your body and there are no ropes to catch you if you fall.
+                        Because of this, bouldering is typically done, well, on boulders, big rocks. Bouldering can be done both inside and outside. Outside bouldering tries to mitigate possible harm
+                        by having a safety mat under you while you climb. This mat has some foam cushion and is a only a few inches thick as a lot of outdoor boulding spots require a short hike 
+                        through the wilderness. You don't want to be luggin around a 30 pound mat of foam to and from your climbing site.
+                    </p>
 
-            <p>
-                On campus we only have indoor bouldering. This consists of a tall and very wide wall of 14 ft. and 60 ft. respectively. Indoor bouldering differs from outdoor in that the foam 
-                mat to catch you is much thicker, cushioning your fall more, and the problems on the wall can be changed any day of the week. The student employees of the climbing wall have 
-                specific people called "setters". They create the different problems on the wall. The routes are changed on a bi-weekly basis. Each bi-week, only two colors are changed.
-            </p>
+                    <p>
+                        On campus we only have indoor bouldering. This consists of a tall and very wide wall of 14 ft. and 60 ft. respectively. Indoor bouldering differs from outdoor in that the foam 
+                        mat to catch you is much thicker, cushioning your fall more, and the problems on the wall can be changed any day of the week. The student employees of the climbing wall have 
+                        specific people called "setters". They create the different problems on the wall. The routes are changed on a bi-weekly basis. Each bi-week, only two colors are changed.
+                    </p>
 
-        <h2>Climbing Difficulties and Grades</h2>
+                    <img id="outdoor" src="./images/outdoor_bouldering.jpg" alt="An example of different colored holds on a climbing wall">
+                    <img id="belay" src="./images/belay_climbing.jpg" alt="An example of different colored holds on a climbing wall">
+            </section>
 
-            <p>Each climbing gym has its own color code to signify the difficulty of each route. The climbing wall on campus uses the following:</p>
+            <section id="grade">
+                <h2>Climbing Difficulties and Grades</h2>
 
-            <ol>
-                <li>Beginner - Green</li>
-                <li>Easy - Yellow</li>
-                <li>Lower Intermediate - Orange</li>
-                <li>Upper Intermediate - Blue</li>
-                <li>Advanced - Black</li>
-                <li>Expert - White</li>
-            </ol>
+                    <p>Each climbing gym has its own color code to signify the difficulty of each route. The climbing wall on campus uses the following:</p>
 
-            <p>
-                Though the colors define a range of diffculty, there are ranges of diffculty for each color. This range is from VB to V17 or even more depending on who you talk to, VB stands 
-                for V-Beginner. This V-Scale is what is used for outdoor bouldering, as there are no different colored holds to signify difficulty.
-            </p>
+                    <table>
+                        <tr>
+                            <th>Difficulty</th>
+                            <th>Color</th>
+                            <th>V-scale</th>
+                        </tr>
+                            
+                        <tr>
+                            <td>Beginner</td>
+                            <td>Green</td>
+                            <td>VB - V0</td>
+                        </tr>
+                            
+                        <tr>
+                            <td>Easy</td>
+                            <td>Yellow</td>
+                            <td>V1 - V2</td>
+                        </tr>
 
-        <h2>Climbing log</h2>
+                        <tr>
+                            <td>Lower Intermediate</td>
+                            <td>Orange</td>
+                            <td>V2 - V3</td>
+                        </tr>
 
-        <table>
-            <caption>Problems</caption>
+                        <tr>
+                            <td>Upper Intermediate</td>
+                            <td>Blue</td>
+                            <td>V3 - V4</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Advanced</td>
+                            <td>Black</td>
+                            <td>V5 - V6</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Expert</td>
+                            <td>White</td>
+                            <td>V6 - V7</td>
+                        </tr>
+                    </table>
 
-            <tr>
-                <th>Name</th>
-                <th>Color</th>
-                <th>Grade</th>
-                <th>Date completed</th>
-            </tr>
+                    <p>
+                        Though the colors define a range of diffculty, there are ranges of diffculty for each color. This range is from VB to V17 or even more depending on who you talk to, VB stands 
+                        for V-Beginner. This V-Scale is what is used for outdoor bouldering, as there are no different colored holds to signify difficulty.
+                    </p>
 
-            <tr>
-                <td>The Boxer</td>
-                <td>Orange</td>
-                <td>V2</td>
-                <td>2/2/22</td>
-            </tr>
-
-            <tr>
-                <td>Paws up</td>
-                <td>Orange</td>
-                <td>V2</td>
-                <td>2/4/22</td>
-            </tr>
-
-            <tr>
-                <td>Shrimp Heads</td>
-                <td>Yellow</td>
-                <td>V1</td>
-                <td>2/2/22</td>
-            </tr>
-
-            <tr>
-                <td>Jugtastic</td>
-                <td>Green</td>
-                <td>V0</td>
-                <td>2/2/22</td>
-            </tr>
-        </table>
+                    <img id="colors" src="./images/bouldering_colors_2.jpg" alt="An example of different colored holds on a climbing wall">
+            </section>
+        </main>
     </body>
 </html>

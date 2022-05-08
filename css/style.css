@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
 
-/* main element selectors */
 body {
     font-family: 'Raleway', 'Roboto', Verdana, Arial, sans-serif;
     line-height: 1.2;
     font-size: 15px;
 
-    background-color: #f6c453;
+    /* background-color: #f6c453; */
     display: grid;
     grid-template-areas: 
         "header"
@@ -20,13 +19,17 @@ header {
 }
 
 main {
-    grid-area: main;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-        "intro gov gov"
-        "geo gov gov";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
+        "intro intro intro intro"
+        "type type grade grade"
+        "type type grade grade"
+        "type type grade grade"
+        "type type grade grade";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
 
 footer {
@@ -39,6 +42,10 @@ footer p {
 }
 
 /* link selectors */
+a {
+    color: default;
+}
+
 a:link {
     color: #D92C30;
 }
@@ -55,85 +62,47 @@ a:active {
     color: #396782;
 }
 
-
-/* attribute selectors */
-section {
-    background-color: #f0a04b;
-    padding: 10px;
+table {
+    margin: auto;
 }
 
-section h2 {
-    margin-top: 0;
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-article {
-    background-color: #fefbe9;
-    padding: 10px;
+.log {
+    font-size: 20px;
 }
 
-article h3 {
-    margin-top: 0;
+#intro {
+    grid-area: intro;
 }
 
-/* id selectors */
-#Geo {
-    grid-area: geo;
+#type {
+    grid-area: type;
 }
 
-#GeoArts {
-    display: grid;
-    grid-template-areas: 
-        "loc"
-        "coord";
-    grid-template-columns: 1fr;
-    padding: 10px;
-    grid-gap: 10px;
+#grade {
+    grid-area: grade;
 }
 
-#Loc {
-    grid-area: loc;
+#colors {
+    grid-area: type;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#SpainMap {
-    float: left;
-    margin: 8px;
+#outdoor {
+    grid-area: type;
+    display: block;
+    margin: auto;
 }
 
-#GeoLoc {
-    grid-area: coord;
-}
-
-#Gov {
-    grid-area: gov;
-}
-
-#GovArts {
-    display: grid;
-    grid-template-areas: 
-        "cont flag"
-        "cap indp";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 10px;
-    grid-gap: 10px;
-}
-
-#SpainFlag {
-    object-position: center;
-}
-
-#Cntry {
-    grid-area: cont;
-}
-
-#Flag {
-    grid-area: flag;
-}
-
-#Cptl {
-    grid-area: cap;
-}
-
-#Indp {
-    grid-area: indp;
+#belay {
+    grid-area: type;
+    display: block;
+    margin: auto;
 }
